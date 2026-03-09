@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Spotlified</title>
+
+
+  <!-- Bloquer le viewport - ici, c'est une app! Pas de zoom. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <!-- Fonts google pour les icônes et la police par défaut -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" />
+
+  <!-- Stylesheet principale -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="manifest" href="public/manifest.webmanifest" />
+
+  <!-- Javascript principal -->
+  <!-- ...à quoi sert le defer ? :) -->
+  <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
+    <a id="logo" href="/">
+      <span class="material-icons">graphic_eq</span>
+      Spotlified
+    </a>
+
+    <div id="search-wrapper">
+      <!-- ajouter la classe "active" à #search-input pour l'afficher-->
+      <input id="search-input" type="search" spellcheck="false" autocapitalize="false" autofocus />
+
+      <button id="search-trigger" class="icon-button" type="button">
+        <span class="material-icons">search</span>
+      </button>
+    </div>
+  </header>
+
+  <audio id="audio-player" controls style="display: none;"></audio>
+
+  <main>
+  </main>
+  <!-- plus tard --->
+  <!-- <section id="lyrics-section" style="display:none">
+    <h4>Never going home</h4>
+    <h5>Kungs</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis elit maximus, consequat velit vitae, laoreet
+      felis. Morbi commodo vitae dolor nec scelerisque. Maecenas non urna orci.</p>
+  </section> -->
+
+  <spot-footer></spot-footer>
+</body>
+
+</html>
